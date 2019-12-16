@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityScan">
+<!--    tools:context=".MainActivity"-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/cPreview">
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        android:orientation="horizontal">
+
+
+<!--        <Button-->
+<!--            android:onClick="ShowPopup"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginBottom="50dp"-->
+<!--            android:gravity="bottom"-->
+<!--            android:id="@+id/showPop"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_toRightOf="@+id/btnCam"-->
+<!--            android:text="Show Popup"/>-->
+
+        <com.example.tobaccoscannercog.PreviewSurfaceView
+            android:id="@+id/preview_surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.example.tobaccoscannercog.PreviewSurfaceView>
+
+        <com.example.tobaccoscannercog.DrawingView
+            android:id="@+id/drawing_surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.example.tobaccoscannercog.DrawingView>
+    </FrameLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom"
+        android:id="@+id/btnCam"
+        android:textSize="15sp"
+        android:text="Take Photo"/>
+</RelativeLayout>

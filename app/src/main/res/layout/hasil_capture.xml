@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="550dp"
+    android:background="@color/popup"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:padding="0dp"
+            android:id="@+id/imgck"
+            app:srcCompat="@mipmap/ic_launcher"/>
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginBottom="70dp"-->
+<!--            android:gravity="bottom"-->
+<!--            android:text="Akurasi\t\t\t\t\t\t: \nKualitas\t\t\t\t\t:"-->
+<!--            android:textSize="10pt"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginBottom="96dp"-->
+<!--            android:layout_marginLeft="180dp"-->
+<!--            android:gravity="bottom"-->
+<!--            android:text="70%"-->
+<!--            android:textSize="10pt"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginBottom="70dp"-->
+<!--            android:layout_marginLeft="180dp"-->
+<!--            android:gravity="bottom"-->
+<!--            android:text="Baik"-->
+<!--            android:textSize="10pt"/>-->
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/saveImg"
+            android:layout_marginEnd="30dp"
+            android:layout_toLeftOf="@id/proses"
+            android:textSize="15sp"
+            android:text="Simpan"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/proses"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBaseline="@+id/saveImg"
+            android:text="PROSES"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/closePop"
+            android:textSize="15sp"
+            android:layout_marginStart="30dp"
+            android:layout_alignBaseline="@+id/saveImg"
+            android:layout_toRightOf="@id/proses"
+            android:text="Batal"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

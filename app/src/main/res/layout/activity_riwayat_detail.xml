@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    tools:context="com.example.tobaccoscannercog.RiwayatDetail">
+
+    <ImageView
+        android:id="@+id/img_sampul"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:padding="0dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID\t\t\t\t\t\t\t\t: "
+        android:layout_below="@id/img_sampul"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama\t\t\t: "
+        android:layout_below="@id/tvId"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvAkurasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Akurasi : "
+        android:layout_below="@id/tvFoto"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kualitas\t:\t"
+        android:textSize="20sp"
+        android:layout_below="@id/tvAkurasi"
+        />
+    <TextView
+        android:id="@+id/tvId_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grade\t\t\t: "
+        android:textSize="20sp"
+        android:layout_below="@id/tvLabel"/>
+    //SHOW DETAIL
+    <TextView
+        android:id="@+id/showId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Id"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/tvId"
+        android:layout_alignBaseline="@+id/tvId"/>
+    <TextView
+        android:id="@+id/showFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nama"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/tvFoto"
+        android:layout_alignLeft="@+id/showId"/>
+    <TextView
+        android:id="@+id/showAkurasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Akurasi"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/tvAkurasi"
+        android:layout_toRightOf="@+id/tvAkurasi"/>
+    <TextView
+        android:id="@+id/showLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Kualitas"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/tvLabel"
+        android:layout_toRightOf="@+id/tvLabel"/>
+    <TextView
+        android:id="@+id/showGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Grade"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/tvId_Label"
+        android:layout_toRightOf="@+id/tvId_Label"/>
+
+    <Button
+        android:id="@+id/btDelete2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/showGrade"
+        android:text="Delete" />
+
+</RelativeLayout>

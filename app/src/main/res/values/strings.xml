@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TobaccoScannerCog</string>
+    <string name="usd">$</string>
+    <string-array name="sort_types">
+        <item>Semua</item>
+        <item>Baik</item>
+        <item>Buruk</item>
+    </string-array>
+</resources>
